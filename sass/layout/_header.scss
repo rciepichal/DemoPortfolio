@@ -1,0 +1,40 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 24px 32px;
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  .menu-items {
+    display: flex;
+    list-style: none;
+    gap: 42px;
+    li {
+      a {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 18px;
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 0;
+          background-color: $white;
+          height: 1px;
+          transition: all 0.5s ease;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

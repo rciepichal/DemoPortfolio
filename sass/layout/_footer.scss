@@ -1,0 +1,17 @@
+#main-footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  z-index: 2;
+  a {
+    text-decoration: none;
+    color: $white;
+    font-size: 30px;
+    margin: 0 16px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
